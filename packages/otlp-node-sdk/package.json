@@ -1,6 +1,6 @@
 {
   "name": "@mgcrea/otlp-node-sdk",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Eslint config for Node.js applications",
   "author": "Olivier Louvignes <olivier@mgcrea.io>",
   "repository": "github:mgcrea/eslint-config",
@@ -33,7 +33,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@mgcrea/otlp-node-sampler": "0.2.1",
+    "@mgcrea/otlp-node-sampler": "0.2.2",
     "@opentelemetry/api": "^1.4.1",
     "@opentelemetry/auto-instrumentations-node": "^0.37.0",
     "@opentelemetry/exporter-metrics-otlp-proto": "^0.40.0",
