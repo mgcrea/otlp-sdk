@@ -1,5 +1,5 @@
 {
-  "name": "@mgcrea/otlp-sdk-node",
+  "name": "@mgcrea/otlp-node-sdk",
   "version": "0.2.0",
   "description": "Eslint config for Node.js applications",
   "author": "Olivier Louvignes <olivier@mgcrea.io>",
