@@ -47,7 +47,7 @@ type KnownPlugins = keyof KnownConfigs;
 type KnownPluginsWithOptions = ObjectToTupleUnion<KnownConfigs>;
 // type KnownPluginOptions = ExtractSecondItem<KnownConfigs>;
 
-type ConfigureTracingOptions = Pick<NodeSamplerOptions, "ipAllowList" | "userAgentDenylist"> & {
+type ConfigureTracingOptions = Pick<NodeSamplerOptions, "ipAllowList" | "userAgentDenyList"> & {
   name: string;
   version: string;
   env?: string;
@@ -64,7 +64,7 @@ export const configureTracing = (options: ConfigureTracingOptions) => {
     version = TRACING_SERVICE_VERSION,
     env = NODE_ENV,
     ipAllowList = TRACING_IP_ALLOWLIST,
-    userAgentDenylist = TRACING_USER_AGENT_DENYLIST,
+    userAgentDenyList = TRACING_USER_AGENT_DENYLIST,
     plugins = [],
     traceExporterOptions = {},
     // metricExporterOptions = {},
@@ -82,7 +82,7 @@ export const configureTracing = (options: ConfigureTracingOptions) => {
 
   const sampler = new NodeSampler({
     ipAllowList,
-    userAgentDenylist,
+    userAgentDenyList,
   });
 
   const provider = new NodeTracerProvider({
