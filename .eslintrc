@@ -1,0 +1,5 @@
+{
+  "extends": "@mgcrea/node",
+  "ignorePatterns": ["dist", "node_modules"],
+  "root": true
+}

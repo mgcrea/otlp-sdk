@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`module > should export an eslint config 1`] = `
+{
+  "NodeSampler": [Function],
+}
+`;
