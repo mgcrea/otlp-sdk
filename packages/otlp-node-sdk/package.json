@@ -33,7 +33,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@mgcrea/otlp-node-sampler": "link:../otlp-node-sampler",
+    "@mgcrea/otlp-node-sampler": "workspace:*",
     "@opentelemetry/api": "^1.4.1",
     "@opentelemetry/auto-instrumentations-node": "^0.37.0",
     "@opentelemetry/exporter-metrics-otlp-proto": "^0.40.0",

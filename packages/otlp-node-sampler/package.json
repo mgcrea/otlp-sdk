@@ -1,5 +1,5 @@
 {
-  "name": "@mgcrea/oltp-node-sampler",
+  "name": "@mgcrea/otlp-node-sampler",
   "version": "0.1.0",
   "description": "Eslint config for React Native applications",
   "author": "Olivier Louvignes <olivier@mgcrea.io>",
