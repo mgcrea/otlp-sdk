@@ -15,6 +15,7 @@ import { NodeTracerProvider } from "@opentelemetry/sdk-trace-node";
 import { SemanticResourceAttributes } from "@opentelemetry/semantic-conventions";
 import { PrismaInstrumentation } from "@prisma/instrumentation";
 import { IncomingMessage } from "http";
+import assert from "node:assert";
 import {
   NODE_ENV,
   TRACING_IP_ALLOWLIST,
@@ -69,6 +70,9 @@ export const configureTracing = (options: ConfigureTracingOptions) => {
     traceExporterOptions = {},
     // metricExporterOptions = {},
   } = options;
+
+  assert(name, "env `TRACING_SERVICE_NAME` or ConfigureTracingOptions `name` is required");
+  assert(version, "env `TRACING_SERVICE_VERSION` or ConfigureTracingOptions `version` is required");
 
   diag.setLogger(new DiagConsoleLogger(), logLevel);
 
