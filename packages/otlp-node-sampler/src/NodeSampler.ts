@@ -34,7 +34,7 @@ export class NodeSampler implements Sampler {
     _traceId: string,
     spanName: string,
     _spanKind: SpanKind,
-    attributes: Attributes
+    attributes: Attributes,
   ): SamplingResult {
     const parentSpan = getSpan(context);
 
